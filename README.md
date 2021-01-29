@@ -13,7 +13,7 @@ MySQL
 
 #### ER-Diagram
 
-<img src="/Users/vivienhuang/Library/Application Support/typora-user-images/image-20210130005911671.png" alt="image-20210130005911671" style="zoom:50%;" />
+<img src="img/image-20210130005911671.png" alt="image-20210130005911671" style="zoom:50%;" />
 
 #### 功能說明
 
