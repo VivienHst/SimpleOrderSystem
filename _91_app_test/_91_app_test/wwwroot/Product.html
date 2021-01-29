@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Product</title>
+</head>
+<body>
+    <table border="1" cellpadding="4">
+        <tbody id="product">
+            <tr>
+                <td>Name</td>
+                <td id="prodName"></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td id="prodPrice"></td>
+            </tr>
+            <tr>
+                <td>Cost</td>
+                <td id="prodCost"></td>
+            </tr>
+            <tr>
+                <td>Description</td>
+                <td id="prodDesc"></td>
+            </tr>
+        </tbody>
+    </table>
+    <button onclick="history.go(-1)" 　>back</button>
+
+    <script src="js/product/product_detail.js" asp-append-version="true"></script>
+    <script type="text/javascript">getOrderItem();</script>
+
+</body>
+</html>

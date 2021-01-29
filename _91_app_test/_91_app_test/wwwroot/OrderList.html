@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/order/order_list.js" asp-append-version="true"></script>
+</head>
+<body>
+    <table border="1" cellpadding="4">
+        <tr>
+            <td></td>
+            <td>OrderId</td>
+            <td>ProductId</td>
+            <td>Price</td>
+            <td>cost</td>
+            <td>Status</td>
+        </tr>
+        <tbody id="orders"></tbody>
+    </table>
+    <button onclick="shipOrder()">complete</button>
+
+    <script type="text/javascript">getOrders();</script>
+</body>
+</html>
