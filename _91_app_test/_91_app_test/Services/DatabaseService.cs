@@ -24,6 +24,7 @@ namespace _91_app_test
             int result = 0;
             using (MySqlConnection conn = new MySqlConnection(databaseObject.connStr))
             {
+                if (conn.State == ConnectionState.Closed) conn.Open();
                 using (var transaction = conn.BeginTransaction())
                 {
                     try
