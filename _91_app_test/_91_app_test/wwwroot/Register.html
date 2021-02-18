@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="js/account/register.js"></script>
+</head>
+<body>
+    
+    <table cellpadding="4">
+        <tr>
+            <td>Account</td>
+            <td><input type="text" id="account"></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" id="password"> </td>
+        </tr>
+        <tr>
+            <td>Confirm Password</td>
+            <td><input type="password" id="confirmPassword"></td>
+        </tr>
+    </table> 
+    <p style="color: red; display: none;" id="errorMessage"></p>
+    <button id="regiter" onclick="register()">Register</button>
+</body>
+</html>

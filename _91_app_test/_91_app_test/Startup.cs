@@ -27,6 +27,8 @@ namespace _91_app_test
             services.AddScoped<IDatabaseService, DatabaseService>();
             // 訂單Service
             services.AddScoped<IOrderService, OrderService>();
+            services.AddScoped<IAccountService, AccountService>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

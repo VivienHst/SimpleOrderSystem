@@ -1,18 +1,25 @@
 ﻿const uri = 'api/Order/Orders';
 const ship_uri = 'api/Order/ShipOrders';
-let account = 'UserA';
+const login_uri = 'Login.html';
+
+let account;
 
 let orders = [];
 
 // 取得訂單
 function getOrders() {
+    account = localStorage.getItem('account');
+    if (account == null) window.location.href = "/Login.html";
 
     fetch(`${uri}?account=${account}`, {method: 'GET',})
     .then(response => response.json())
     .then(data => displayOrders(data))
     .catch(error => console.error('Unable to get orders.', error));
 }
-
+function logout(){
+    localStorage.removeItem('account');
+    document.location.href = login_uri;
+}
 // 顯示訂單列表
 function displayOrders(data) {
     const tBody = document.getElementById('orders');

@@ -19,5 +19,7 @@
     <Folder Include="Models\DBData\DataType\" />
     <Folder Include="Views\" />
     <Folder Include="Common\Tool\" />
+    <Folder Include="wwwroot\js\account\" />
+    <Folder Include="Models\FormModel\" />
   </ItemGroup>
 </Project>
